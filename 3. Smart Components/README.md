@@ -1,6 +1,7 @@
-# 3. Dumb component
+# 3. Smart component
 
-This app expose the way dumb component work, taking props as "parameter" and rendering a JSX element
+This app expose the way smart components work.
+They extend React Component class giving them lifecycle methods, a state and automatic rerender capabilities.
 
 ## Install dependencies
 
