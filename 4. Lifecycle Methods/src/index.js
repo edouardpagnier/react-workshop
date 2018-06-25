@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Container from './Container'
 
 ReactDOM.render(
-	<h1>Hello World </h1>,				// What
+	<Container />,				// What
 	document.getElementById('root')		// Where
-)
+);

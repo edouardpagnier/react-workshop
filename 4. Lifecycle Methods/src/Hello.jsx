@@ -20,6 +20,19 @@ class Hello extends Component {
 		this.setState({age: this.state.age - 1})
 	}
 
+	componentDidMount() {
+		console.log('Component Hello did mount !')
+	}
+
+	componentDidUpdate() {
+		console.log('Component Hello did update ! New age is ' + this.state.age)
+	}
+
+	componentWillUnmount() {
+		console.log('Component Hello will unmount !')
+		alert('Hello component will unmount !')
+	}
+
 	render() {
 		return (
 			<div>
