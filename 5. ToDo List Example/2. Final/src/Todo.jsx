@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class Todo extends Component {
+  /* Create the main input ref & the initiale state */
   constructor(props) {
     super(props);
     this.input = React.createRef()
@@ -51,9 +52,7 @@ class Todo extends Component {
           <button>Submit</button>
         </form>
         <ul>
-          {
-            this.state.items.map((item, index) => <li key={index} onClick={this.onClick}>{item}</li>)
-          }
+          {this.state.items.map((item, index) => <li key={index} onClick={this.onClick}>{item}</li>)}
         </ul>
       </div>
     );
