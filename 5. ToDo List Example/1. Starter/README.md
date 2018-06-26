@@ -1,4 +1,4 @@
-# 3. Smart component
+# 3. Todo Example
 
 The Todo example is a small app using all the concepts presented in the workshop.
 
