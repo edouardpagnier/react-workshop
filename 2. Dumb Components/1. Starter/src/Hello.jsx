@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hello = ({firstname, lastname}) => {
+const Hello = (props) => {
 	return (
 		// Return the right JSX element to display the props firstname and lastname
 	)

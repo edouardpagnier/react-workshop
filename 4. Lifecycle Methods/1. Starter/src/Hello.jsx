@@ -7,9 +7,6 @@ class Hello extends Component {
 		this.state = {
 			age: 30
 		}
-
-		this.handleOlder = this.handleOlder.bind(this)
-		this.handleYounger = this.handleYounger.bind(this)
 	}
 
 	handleOlder() {
@@ -29,8 +26,8 @@ class Hello extends Component {
 		return (
 			<div>
 				<h1>Hello {this.props.firstname} {this.props.lastname} your age is {this.state.age} !</h1>
-				<button onClick={this.handleOlder}>Older</button>
-				<button onClick={this.handleYounger}>Younger</button>
+				<button onClick={() => {this.handleOlder()}}>Older</button>
+				<button onClick={() => {this.handleYounger()}}>Younger</button>
 			</div>
 		)
 	}
