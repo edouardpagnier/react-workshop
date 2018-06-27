@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
 class Todo extends Component {
-  /* Create the main input ref & the initiale state */
+  /* 1. Create the initiale state & main input reference */
   // constructor(props) {}
 
-  /* Update the state current to the input value */
+  /* 2. Update the state current to the input value */
   // onChange = (event) => {}
 
-  /* Update the state items */
+  /* 3. Update the state items */
   // onSubmit = (event) => {}
 
-  /* Update a item to be done */
+  /* 4. Update a item to be done */
   // onClick(event) {}
 
   render() {

@@ -3,23 +3,23 @@ import React, { Component } from 'react';
 class Todo extends Component {
   /* Create the main input ref & the initiale state */
   constructor(props) {
-    super(props);
+    super(props)
     this.input = React.createRef()
     this.state = {
       items: [],
       current: ''
-    };
+    }
   }
 
   /* Update the state current to the input value */
   onChange = (event) => {
-    this.setState({ current: event.target.value });
+    this.setState({ current: event.target.value })
   }
 
   /* Update the state items */
   onSubmit = (event) => {
     // Prevent default behaviour
-    event.preventDefault();
+    event.preventDefault()
 
     // Check if the current value is not an empty string
     if (this.state.current === '') {
@@ -30,7 +30,7 @@ class Todo extends Component {
     this.setState({
       items: [...this.state.items, this.state.current],
       current: ''
-    });
+    })
 
     // Reset the input value
     this.input.current.value = ''
@@ -55,7 +55,7 @@ class Todo extends Component {
           {this.state.items.map((item, index) => <li key={index} onClick={this.onClick}>{item}</li>)}
         </ul>
       </div>
-    );
+    )
   }
 }
 
